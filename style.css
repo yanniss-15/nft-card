@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0D1A2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card {
+    height: 350px;
+    width: 210px;
+    display: flex;
+    background-color: #15273F;
+    border-radius: 5%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-content > img {
+    height: 210px;
+    width: 205px;
+    padding: 15px;
+    border-radius: 10%;
+}
+
+.card-content-white-title {
+    color:white;
+    font-weight: 100;
+}
+
+.card-content-lightblue-text {
+    color:lightblue;
+}
