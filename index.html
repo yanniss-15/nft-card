@@ -6,6 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarina&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
@@ -19,16 +22,31 @@
 
       <p class="card-content-lightblue-text">Our Equilibrium collection promotes balance and calm.</p>
 
-      0.041 ETH
-      3 days left
+      <div class="card-content-desc">
+
+        <div class="card-content-eth-icon-text">
+          <svg viewBox="0 0 11 18" xmlns="http://www.w3.org/2000/svg" class="eth-icon"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg><p class="card-content-eth">0.041ETH</p>
+        </div>
+
+        <div class="card-content-days-icon-text">
+          <svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" class="clock-icon"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg><p class="card-content-days">3 days left</p>
+        </div>
+
+      </div>
+
+      <div class="line"></div>
       
-      Creation of <p class="card-content-white-title">Jules Wyvern</p>
+      <div class="name-creator">
+        <img src="images/image-avatar.png" id="avatar"><p class="card-content-creationof">Creation of </p><p class="card-content-white-name">Jules Wyvern</p>
+      </div>
+
     </article>
   </section>
 
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Yannis KH</a>.
-  </div> -->
+  </div>
+  
 </body>
 </html>

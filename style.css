@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Outfit';
 }
 
 body {
@@ -19,26 +20,127 @@ body {
     display: flex;
     background-color: #15273F;
     border-radius: 5%;
+    box-shadow: 0px 5px 10px 10px #0B1524;
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
+
+/*Card image*/
 
 .card-content > img {
     height: 210px;
     width: 205px;
     padding: 15px;
     border-radius: 10%;
+    align-self: center;
 }
+
+/*Card white title and blue text content*/
 
 .card-content-white-title {
     color:white;
-    font-weight: 100;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-bottom: 5px;
 }
 
 .card-content-lightblue-text {
-    color:lightblue;
+    color:#8094B0;
+    padding-left: 15px;
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+/*ETH and days left infos*/
+
+.card-content-desc {
+    display:flex;
+    padding-left: 15px;
+    padding-right: 20px;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-content-eth-icon-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-content-eth {
+    color: #34DFE5;
+    font-size: 10px;
+}
+
+.eth-icon {
+    width: 8px;
+    height: 11px;
+}
+
+.card-content-days-icon-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-content-days {
+    font-size: 10px;
+    color: #8094B0;
+}
+
+.clock-icon {
+    width: 11px;
+    height: 15px;
+}
+
+/*Line*/
+
+.line {
+    border-bottom: 1px solid;
+    border-color: #8094b041;
+    width: 85%;
+    align-self: center;
+}
+
+/*Avatar and name of creator*/
+
+.name-creator {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    gap: 5px;
+    padding-top: 10px;
+}
+
+.card-content-creationof {
+    color:#8094b0;
+    font-size: 11px;
+}
+
+#avatar {
+    height: 20px;
+    width: 20px;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 20px;
+}
+
+.card-content-white-name {
+    color: white;
+    font-size: 11px;
+}
+
+.attribution {
+
+    padding: 30px;
+}
+
+.attribution > a {
+    text-decoration: none;
+    color: white;
 }
